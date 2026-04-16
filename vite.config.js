@@ -5,7 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server:{
     proxy: {
-      "/api": "http://localhost:8080"
+      // Development Proxy
+      // "/api": "http://localhost:8080"
+      
+      // Production Proxy
+      "/api": "https://shoppy-backend-flax.vercel.app/"
     }
   },
   plugins: [react()],
