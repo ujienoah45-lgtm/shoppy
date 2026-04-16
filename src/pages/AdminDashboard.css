@@ -1,0 +1,232 @@
+.admin-dashboard h2 {
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+.dashboard-headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 26px;
+}
+
+.dashboard-kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.7rem;
+    color: var(--muted-text);
+    margin-bottom: 8px;
+}
+
+.dashboard-chip {
+    background: #0f141a;
+    color: #f5e6b6;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background: var(--surface-color);
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid rgba(15, 20, 26, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-strong);
+}
+
+.stat-icon {
+    font-size: 1.8rem;
+    background: var(--accent-soft);
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    color: #47586a;
+    font-size: 0.9rem;
+}
+
+.stat-value {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.dashboard-panel {
+    background: var(--surface-color);
+    padding: 28px 26px 30px;
+    border-radius: 18px;
+    border: 1px solid rgba(15, 20, 26, 0.08);
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+}
+
+.dashboard-panel.recent-activity {
+    grid-column: 1 / -1;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.panel-header h3 {
+    margin-bottom: 6px;
+}
+
+.panel-header p {
+    color: var(--muted-text);
+    font-size: 0.9rem;
+}
+
+.panel-metric {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--primary-color);
+    white-space: nowrap;
+}
+
+.bar-chart {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+    align-items: end;
+    height: 240px;
+    padding: 10px 4px 6px;
+}
+
+.bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+    justify-content: flex-end;
+    min-width: 0;
+}
+
+.bar {
+    width: 100%;
+    max-width: 38px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, var(--accent-color), #b58d1d);
+    min-height: 8px;
+    transition: height 0.3s ease;
+    margin-top: 8px;
+}
+
+.bar-label {
+    font-size: 0.65rem;
+    color: var(--muted-text);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.bar-value {
+    font-size: 0.6rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    line-height: 1.1;
+    white-space: nowrap;
+    max-width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 0.9rem;
+}
+
+.status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+}
+
+.status-card {
+    background: #fdf9ef;
+    border: 1px solid rgba(201, 162, 39, 0.2);
+    border-radius: 14px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.status-card strong {
+    font-size: 1.2rem;
+}
+
+.recent-activity .activity-placeholder {
+    padding: 28px;
+    text-align: center;
+    color: #5f7082;
+    border: 1px dashed rgba(15, 20, 26, 0.16);
+    border-radius: 10px;
+}
+
+.activity-list {
+    display: grid;
+    gap: 16px;
+}
+
+.activity-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: #fbf9f5;
+    border: 1px solid rgba(15, 20, 26, 0.08);
+}
+
+.activity-title {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.activity-meta {
+    font-size: 0.85rem;
+    color: #5f7082;
+    margin-top: 4px;
+}
+
+.activity-amount {
+    font-weight: 700;
+    color: #101820;
+}

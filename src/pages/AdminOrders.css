@@ -1,0 +1,126 @@
+.admin-orders h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.admin-orders {
+    display: grid;
+    gap: 18px;
+}
+
+.orders-table-container {
+    background: var(--surface-color);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(15, 20, 26, 0.08);
+    padding: 6px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.admin-table thead {
+    background: #f7f3ec;
+}
+
+.admin-table th,
+.admin-table td {
+    text-align: left;
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(15, 20, 26, 0.06);
+}
+
+.admin-table tbody tr:hover {
+    background: #fbf9f5;
+}
+
+.admin-table td {
+    color: #2a3342;
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-pending {
+    background-color: #fff8e1;
+    color: #f57f17;
+}
+
+.status-delivered {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-failed {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.status-select {
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(15, 20, 26, 0.18);
+    background: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.status-select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+@media (max-width: 820px) {
+    .admin-table {
+        font-size: 0.9rem;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        padding: 12px 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .orders-table-container {
+        padding: 0;
+    }
+
+    .admin-table thead {
+        display: none;
+    }
+
+    .admin-table tbody tr {
+        display: grid;
+        gap: 8px;
+        padding: 16px;
+        border-bottom: 1px solid rgba(15, 20, 26, 0.08);
+    }
+
+    .admin-table td {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .admin-table td::before {
+        font-weight: 600;
+        color: var(--muted-text);
+    }
+
+    .admin-table td:nth-child(1)::before { content: "Tracking"; }
+    .admin-table td:nth-child(2)::before { content: "Customer"; }
+    .admin-table td:nth-child(3)::before { content: "Date"; }
+    .admin-table td:nth-child(4)::before { content: "Total"; }
+    .admin-table td:nth-child(5)::before { content: "Status"; }
+    .admin-table td:nth-child(6)::before { content: "Action"; }
+}

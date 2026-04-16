@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <g fill="#2f3b4a">
+
+    <!-- Cart handle -->
+    <rect x="40" y="170" width="80" height="20" rx="6"/>
+
+    <!-- Cart body -->
+    <path d="M90 190 L460 190 L430 340 L150 340 L110 230 L60 230 L60 190 Z"/>
+
+    <!-- Shirt collar -->
+    <polygon points="190,120 256,180 322,120 300,120 256,160 212,120"/>
+
+    <!-- Tie -->
+    <polygon points="248,180 264,180 280,300 232,300"/>
+    <polygon points="232,300 280,300 256,350"/>
+
+    <!-- Wheels -->
+    <circle cx="220" cy="400" r="35"/>
+    <circle cx="370" cy="400" r="35"/>
+
+  </g>
+</svg>
